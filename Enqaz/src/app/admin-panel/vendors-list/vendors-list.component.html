@@ -1,0 +1,21 @@
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Open</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vendor of vendors; index as i" >
+        <td>{{vendor._id}}</td>
+        <td>{{vendor.name}}</td>
+        <td (click)=vendorDetails(vendor)><i  routerLink='vendor-update' class="far fa-edit"></i></td>
+        <td><i class="far fa-trash-alt"></i></td>
+        <td (click)="vendorDetails(vendor); "><i routerLink='vendor-profile' class="far fa-eye"></i></td>
+      </tr>
+  </tbody>
+  </table>

@@ -1,0 +1,73 @@
+.main-div{
+    height: 100vh;
+    position: relative;
+}
+.row{
+    height: 100%;
+    margin-right: 0px;
+}
+.left-div
+{
+height: 100%;
+background: #9e9e9e3d;
+}
+.left-div .txt{
+    font-family: 'Abel', serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top:350px;
+}
+.logo{
+/* margin: auto; */
+position: absolute;
+top:45%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.left-div .left-image{
+    width: 100%;
+    height: 100%;
+}
+.right-div .form{
+   position: absolute;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.right-div .right-image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+.submit-btn{
+    width: 350px;
+    background-color: #72BF44;
+    margin-top: 20px;
+    color: white;
+}
+/* .form-control{
+    width: 300px;
+} */
+.invalidAdmin{
+    display: block;
+    background: black;
+}
+.validAdmin{
+    display: none;
+    background: blue;
+}
+
+.ng-valid[required], .ng-valid.required {
+    background:#46e4464f;
+    border: 2px solid #2ca92c6e;
+}
+
+.ng-invalid:not(form){
+    background: #ff000033;
+    border:  2px solid#ff000087;
+}
+

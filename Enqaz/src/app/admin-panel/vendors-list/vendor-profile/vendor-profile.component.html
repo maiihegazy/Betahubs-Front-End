@@ -1,0 +1,71 @@
+
+<div class="container">
+      <div class="row">
+     
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+          <h1 class="h2">Vendor Profile</h1>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{vendorProfileService.vendorSelected.name}}</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">                
+                <div class=" col-md-8 col-lg-8 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Name:</td>
+                        <td>{{vendorProfileService.vendorSelected.name}}</td>
+                      </tr>
+                      <tr>
+                        <td>ID:</td>
+                        <td>{{vendorProfileService.vendorSelected._id}}</td>
+                      </tr>
+                      <tr>
+                        <td>Username:</td>
+                        <td>{{vendorProfileService.vendorSelected.username}}</td>
+                      </tr>
+                   
+                      
+                      <tr>
+                        <td>Email:</td>
+                        <td>{{vendorProfileService.vendorSelected.email}}</td>
+                      </tr>
+                        <tr>
+                        <td>packages:</td>
+                        <td>{{vendorProfileService.vendorSelected.packages}}</td>
+                      </tr>
+                      <tr>
+                        <td>Phone Number</td>
+                        <td>{{vendorProfileService.vendorSelected.phoneNumber}}</td>
+                           
+                      </tr>
+                      <tr>
+                          <td>Services</td>
+                          <td>{{vendorProfileService.vendorSelected.services}} </td>
+                             
+                        </tr>
+                        <tr>
+                            <td>Enqaz Percentage</td>
+                            <td>{{vendorProfileService.vendorSelected.enqazPercentage}}</td>
+                               
+                          </tr>
+                          
+                    </tbody>
+                  </table>
+                </div>
+                  <div class='col-md-2 col-lg-2 '>
+                  <a  class="btn  btn-1" >Edit Vendor</a>
+                </div>
+                <div class='col-md-2 col-lg-2'>
+                    <a class="btn btn-2">Delete Vendor</a>
+                  </div>
+              </div>
+            </div>
+                 
+            
+          </div>
+        </div>
+      </div>
+    </div>

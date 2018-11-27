@@ -1,0 +1,77 @@
+<!--   
+ <div class ="left-div">
+   <div class="logo">
+      <img src="../../assets/login logo.png">  
+   </div>
+  <h1>Welcome</h1>
+  <h2>Enqaz is here for you</h2>
+</div>
+<div class="rigth-div">
+ <div class="main-div">
+  <div class="logo">
+    <img src="../../assets/login logo.png">
+  </div> 
+    <form class="text-center" #loginForm = 'ngForm' (submit)="onLogin($event)">
+        <div class="form-group">
+          <input type="email " id="email" class="form-control" name="email" 
+           placeholder="Email"  [(ngModel)]="email" #loginEmail='ngModel' required pattern="[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[a-zA-Z]" 
+          >
+          </div>
+       
+        <div class="form-group">
+          <input type="password"  id= "password" class="form-control" name="password" 
+           placeholder="Password" [(ngModel)]="password" #passwordLogin='ngModel' required >
+
+        </div>
+        <div class="alert alert-danger" [ngClass]="validationClasses()" >
+          Wrong E-mail or Password!
+        </div>
+        <a href="#" class="forgot-password">Forgot your password?</a>
+        <button type="submit"  class="btn submit-btn" [disabled]='!loginForm.form.valid' >Login</button>
+    </form>
+  </div>
+    </div>
+ -->
+ <div class="main-div">
+   <div class="row">
+     <div class="col-md"> <!--Left Div-->
+        <div class="left-div">
+            <div class="logo">
+                <img src="../../assets/login logo.png">  
+             </div>
+            <!-- <div class="txt">
+            <h1>Welcome</h1>
+            <h2>Enqaz is here for you</h2>
+          </div> -->
+          <img src="../../assets/cardboard.png" class ="img-fluid left-image">
+        </div>
+     </div>
+     <div class="col-md"> <!--Right Div-->
+      <div class="right-div">
+        <div class="form">
+          <form class="text-center" #loginForm = 'ngForm' (submit)="onLogin($event)">
+              <div class="form-group">
+                <input type="email " id="email" class="form-control" name="email" 
+                 placeholder="Email"  [(ngModel)]="email" #loginEmail='ngModel' required pattern="[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[a-zA-Z]" 
+                >
+                </div>
+             
+              <div class="form-group">
+                <input type="password"  id= "password" class="form-control" name="password" 
+                 placeholder="Password" [(ngModel)]="password" #passwordLogin='ngModel' required >
+      
+              </div>
+              <div class="alert alert-danger" [ngClass]="validationClasses()" >
+                Wrong E-mail or Password!
+              </div>
+              <a href="#" class="forgot-password">Forgot your password?</a>
+              <button type="submit"  class="btn submit-btn" [disabled]='!loginForm.form.valid' >Login</button>
+          </form>
+          
+        </div>
+        <img src="../../assets/Untitled-2.png" class="img-fluid right-image"> 
+      </div>
+
+     </div>
+   </div>
+ </div>
